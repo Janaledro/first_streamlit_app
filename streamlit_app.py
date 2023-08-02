@@ -1,5 +1,5 @@
-import streamlit
+import streamlit as st
 
-streamlit.title('Ola k onda, k pex?')
+st.title('Ola k onda, k pex?')
 
-streamlit.subheader('Pepepepepeperrea, conshesumadre, sákalabailar, dile al diyei que no pare')
+st.subheader('Pepepepepeperrea, conshesumadre, sákalabailar, dile al diyei que no pare')
