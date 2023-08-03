@@ -1,11 +1,12 @@
 import streamlit as st
-st.title('Ola k onda, k pex?')
+st.title('Breakfast Favorites')
 
-st.header('Pepepepepeperrea')
-st.text('conshesumadre')
-st.text('sákalabailar')
-st.text('dile al diyei que no pare')
+st.text('🥣 Omega 3 & Blueberry Oatmeal')
+st.text('🥗 Kale, Spinach & Rocket Smoothie')
+st.text('🐔 Hard-boiled Free-Range Egg')
+st.text('🥑🍞 Avocado Toast')
 
+st.title('🍌🍓 Breakfast Favorites 🥝🍇')
 import pandas as pd
 my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
-stream.dataframe(my_fruit_list)
+st.dataframe(my_fruit_list)
