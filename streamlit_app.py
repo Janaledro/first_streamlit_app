@@ -49,6 +49,7 @@ def get_fruit_load_list():
         with my_cnx.cursor() as my_cur:
             my_cur.execute("SELECT * FROM fruit_load_list")
             return my_cur.fetchall()
+            
 # Add a button to load the fruit
 if st.button('Get Fruit Load List'):
     my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
@@ -56,7 +57,7 @@ if st.button('Get Fruit Load List'):
     st.dataframe(my_data_row)
 
 # don't run anything past here while we troubleshoot
-st.stop()
+#st.stop()
 
 # Allow the end user to add a fruit to the list
 def insert_row_snowflake(new_fruit):
