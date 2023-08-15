@@ -26,7 +26,7 @@ st.dataframe(fruits_to_show)
 
 
 #create the repeatable code block (called a function)
-def get_fruityvive_data(this_fruit_coice):
+def get_fruityvice_data(this_fruit_coice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
